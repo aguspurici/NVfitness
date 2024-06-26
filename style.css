@@ -132,6 +132,7 @@ span {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border: 2px solid red
 }
 .banner {
   height: 100%;
@@ -146,6 +147,7 @@ span {
   position: relative;
   display: inline-block;
   z-index: 11;
+  
 }
 .highlights h3 {
   display: inline;
@@ -1088,6 +1090,10 @@ span {
 
   body::before {
     background-attachment: scroll; /* Alternativa en móviles */
+  }
+  /* home */
+  .home{
+    height: 100vh;
   }
   /* carrusel */
   .wrapper{
