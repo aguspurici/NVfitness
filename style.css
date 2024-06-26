@@ -841,7 +841,7 @@ span {
 @media screen and (max-width: 1400px) {
   
   body{
-    background-size: auto;
+    background-size: cover;
   }
 
 
@@ -875,7 +875,7 @@ span {
 
 @media screen and (max-width: 900px) {
   body{
-    background-size: auto;
+    background-size: cover;
   }
   
   /* navbar ------*/
@@ -1082,7 +1082,7 @@ span {
 @media screen and (max-width: 630px) {
 
   body{
-    background-size: auto;
+    background-size: cover;
   }
   
   /* carrusel */
@@ -1234,6 +1234,9 @@ span {
 
 
 @media screen and (max-width: 430px) {
+  body{
+    background-size: cover;
+  }
   .navbar {
     padding: 0 60px;
     height: 130px;
