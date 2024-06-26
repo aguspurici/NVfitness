@@ -132,7 +132,7 @@ span {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 2px solid red
+  
 }
 .banner {
   height: 100%;
@@ -1093,7 +1093,10 @@ span {
   }
   /* home */
   .home{
-    height: 100vh;
+    height: 95vh;
+  }
+  .highlights{
+    margin: auto
   }
   /* carrusel */
   .wrapper{
