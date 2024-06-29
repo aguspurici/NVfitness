@@ -30,6 +30,8 @@ body::before {
   height: 100%;
   background: url("/assets/fondo.jpg") center center / cover no-repeat;
   z-index: -1; /* Coloca el fondo detrás del contenido */
+  filter: grayscale(100%) brightness(0.6) ;
+
 }
 
 html {
@@ -293,7 +295,9 @@ i#next {
 .about .content .cols p {
   text-align: justify;
   font-size: 18px;
-  hyphens: auto;
+  overflow-wrap: normal;  
+    word-break: normal;    
+    hyphens: none;  
 }
 
 .about .content .cols p b {
@@ -1009,6 +1013,10 @@ span {
   .about .content .cols p {
     width: 100%;
     font-size: 2vw;
+    text-align: center;
+    overflow-wrap: normal;  
+    word-break: normal;    
+    hyphens: none;  
   }
 
   /*trainerss ----------------------  */
