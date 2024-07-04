@@ -2,24 +2,17 @@
 <html lang ="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NV Fitness</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-   <link rel="shortcut icon" type="image/x-icon" href="assets/logo.jpg" />
-   <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-   />
-   <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-   />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   <script src="app.js" defer></script>
 
   </head>
     <body>
-      <!-- navigation bar -->
+<!-- navigation bar -->
       <div class="navbar">
         <img src="assets/logo1.jpg" class="logo" alt="Logo" />
         <div class="toggle" onClick="navToggle()"></div>
@@ -32,7 +25,7 @@
         </ol>
       </div>
 
-      <!-- home section -->
+<!-- home section -->
       <section id="home" class="home view">
         <div class="highlights">
           <h3>Entrena con nosotros</h3>
@@ -59,25 +52,7 @@
         </div>
       </section>
       
-
-      <!-- portal de imagenes en resposive -->
-      <!-- <section class="wrapper2"> 
-        <i class="fa-solid fa-arrow-left button2" id="prev2"></i>
-        <div class="image-container2">
-            <a href="#contacto">
-                <div class="carousel2">
-                    <img src="assets/entrenamiento1.png" alt="">
-                    <img src="assets/entrenamiento2.png" alt="">
-                    <img src="assets/promo2.png" alt="">
-                </div>
-            </a>
-        </div>
-        <i class="fa-solid fa-arrow-right button2" id="next2"></i>
-    </section> -->
-
-
-      <!-- portal imagenes -->
-
+<!-- portal imagenes -->
       <section class="wrapper"> 
         <i class="fa-solid fa-arrow-left button" id="prev"></i>
         <div class="image-container">
@@ -91,10 +66,10 @@
           <i class="fa-solid fa-arrow-right button" id="next"></i>
         </div>
 
-    </section>
+      </section>
 
-    <!-- clasesssss ------------------------------- -->
-    <section id="clases" class="clases">
+<!-- clasesssss ------------------------------- -->
+      <section id="clases" class="clases">
       <div class="container">
         <div class="main">
           <h2><span>E</span>ntrenamiento Personalizado</h2>
@@ -118,10 +93,10 @@
         </div>
       </div>
       
-    </section>
+      </section>
     
-    <!-- trainers section -->
-        <section  id="trainers" class="trainers">
+<!-- trainers section -->
+      <section  id="trainers" class="trainers">
           <div class="main">
             <h2><span>N</span>uestro Equipo</h2>
           </div>
@@ -137,7 +112,7 @@
                 </div>
               </div>
               <p>
-                Entrenamiento Personalizado
+                Profe de Entrenamiento Personalizado
               </p>
             </div>
             <div class="frame">
@@ -153,7 +128,7 @@
                 </div>
               </div>
               <p>
-                Profe de musculación
+                Profe de Musculación
               </p>
             </div>
             <div class="frame">
@@ -174,10 +149,9 @@
             </div>
           </div>
           
-        </section>
+      </section>
 
-
-      <!-- about section -->
+<!-- about section -->
       <section id="about" class="about" >
         <div class="content">
           <div class="cols">
@@ -197,11 +171,8 @@
         </div>
       </section>
 
-
-  
-   <!-- contacto section -->
-  
-        <section id="contacto" class="contacto view">
+<!-- contacto section -->
+      <section id="contacto" class="contacto view">
           <div class="full">
   
             <div class="container">
@@ -308,9 +279,9 @@
                 </div>
               </div>
           </div>
-        </section>
+      </section>
       
-      <!-- Íconos flotantes -->
+<!-- Íconos flotantes -->
       <section class="iconos">
         <div class="floating-icons">
           <a href="https://api.whatsapp.com/send?phone=543517896431&text=Hola!%20Me%20gustaria%20entrenar%20con%20ustedes.." target="_blank" class="icon whatsapp">
@@ -322,24 +293,22 @@
       </div>
       </section>
 
-
-  <!-- pie de pag -->
+<!-- pie de pag -->
       <section class="copyright">
         &copy; copyright <a href="#">NV Fitness</a> 2024 | Todos los derechos reservados
       </section>
 
-      <!-- ICONS -->
+<!-- ICONS -->
       <script
         type="module"
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
       ></script>
-
       <script
         type="module"
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
       ></script>
 
-      <!-- copy -->
+<!-- copy -->
       <script>
         document
           .getElementById("texto")
@@ -356,7 +325,7 @@
           });
       </script>
 
-      <!-- navbaaaaaar -------------------- -->
+<!-- navbaaaaaar -------------------- -->
       <script>
         window.addEventListener("scroll", function () {
           const navbar = document.querySelector(".navbar");
@@ -370,10 +339,6 @@
           menu.classList.toggle("active");
         }
       </script>
-
-
-
-
 
 <!-- portal  -->
     <script>
@@ -546,12 +511,7 @@ crearCarrusel('carrusel1', ['./assets/carrusel7.jpg', './assets/carrusel2.jpg', 
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="./app.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
   </html>
 
