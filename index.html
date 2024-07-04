@@ -44,8 +44,38 @@
           </p>
         </div>
         <div class="banner"></div>
+        <div class="wrapper2">
+          <i class="fa-solid fa-arrow-left button2" id="prev2"></i>
+          <div class="image-container2">
+              <a href="#contacto">
+                  <div class="carousel2">
+                      <img src="assets/entrenamiento1.png" alt="">
+                      <img src="assets/entrenamiento2.png" alt="">
+                      <img src="assets/promo2.png" alt="">
+                  </div>
+              </a>
+          </div>
+          <i class="fa-solid fa-arrow-right button2" id="next2"></i>
+        </div>
       </section>
       
+
+      <!-- portal de imagenes en resposive -->
+      <!-- <section class="wrapper2"> 
+        <i class="fa-solid fa-arrow-left button2" id="prev2"></i>
+        <div class="image-container2">
+            <a href="#contacto">
+                <div class="carousel2">
+                    <img src="assets/entrenamiento1.png" alt="">
+                    <img src="assets/entrenamiento2.png" alt="">
+                    <img src="assets/promo2.png" alt="">
+                </div>
+            </a>
+        </div>
+        <i class="fa-solid fa-arrow-right button2" id="next2"></i>
+    </section> -->
+
+
       <!-- portal imagenes -->
 
       <section class="wrapper"> 
@@ -342,6 +372,9 @@
       </script>
 
 
+
+
+
 <!-- portal  -->
     <script>
       const wrapper = document.querySelector(".wrapper"),
@@ -382,7 +415,44 @@ wrapper.addEventListener("mouseover", () => clearInterval(intervalId))
 wrapper.addEventListener("mouseleave",autoSlide)
 
 
+// portal 2 
 
+const portal2 = document.querySelector(".wrapper2"),
+        carrusel2 = document.querySelector(".carousel2"),
+        imagenes2 = document.querySelectorAll(".carousel2 img"),
+        botones2 = document.querySelectorAll(".button2");
+
+  let indiceImagen2 = 0,
+      idIntervalo2;
+
+  const autoDeslizar2 = () => {
+    idIntervalo2 = setInterval(() => {
+      deslizarImagen2(++indiceImagen2);
+    }, 5000);
+  };
+  autoDeslizar2();
+
+  const deslizarImagen2 = () => {
+    if (indiceImagen2 >= imagenes2.length) {
+      indiceImagen2 = 0;
+    }
+    if (indiceImagen2 < 0) {
+      indiceImagen2 = imagenes2.length - 1;
+    }
+    carrusel2.style.transform = `translateX(-${indiceImagen2 * 100}%)`;
+  };
+
+  const actualizarClic2 = (e) => {
+    clearInterval(idIntervalo2);
+    indiceImagen2 += e.target.id === "next2" ? 1 : -1;
+    deslizarImagen2(indiceImagen2);
+    autoDeslizar2();
+  };
+
+  botones2.forEach(boton => boton.addEventListener("click", actualizarClic2));
+
+  portal2.addEventListener("mouseover", () => clearInterval(idIntervalo2));
+  portal2.addEventListener("mouseleave", autoDeslizar2);
 
     </script>
 

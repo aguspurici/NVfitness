@@ -149,7 +149,6 @@ span {
   position: relative;
   display: inline-block;
   z-index: 11;
-  
 }
 .highlights h3 {
   display: inline;
@@ -201,6 +200,13 @@ span {
   letter-spacing: 1.5px;
   background: #92dc00;
 }
+
+/* portal del imagenes responsive */
+.home .wrapper2{
+  display: none;
+}
+
+
 
 /* portal imagenes ----------------------------------- */
 .wrapper {
@@ -966,7 +972,6 @@ span {
   .highlights .tagline{
     font-size: 2vw;
   }
-    /* wrapper----------------------------------- */
   /* clasesssss ----------------------------------- */
   .clases .container {
     padding-left:65px;
@@ -1101,11 +1106,81 @@ span {
   }
   /* home */
   .home{
-    height: 95vh;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .highlights{
-    margin: auto
+  .home .highlights{
+    margin-bottom: 0;
   }
+
+  .home .wrapper2{
+    width: auto;
+    display: flex;
+    height: auto;
+    position: relative;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+    margin-bottom: -60px;
+  }
+
+
+
+  .home .wrapper2 i.button2 {
+
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #222;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #92dc00;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    z-index: 6;
+    cursor: pointer;
+    bottom: 10px;
+  }
+  .home .wrapper2 i.button2:active {
+    transform: scale(0.94) translateY(-50%);
+  }
+  .home .wrapper2 i#prev2 {
+    bottom: 10px;
+    left: 40%;
+  }
+  .home .wrapper2 #next2 {
+    bottom: 10px;
+    right:40%;
+  }
+  .home .wrapper2 .image-container2 {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  
+  }
+  .home .wrapper2 .image-container2 .carousel2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+    transition: transform 0.5s ease-in-out;
+  }
+.home .wrapper2 .image-container2 .carousel2 img {  
+    height: auto;
+    max-width: 100%;
+    border: 10px solid transparent;
+    border-radius: 28px;
+    object-fit: cover;
+    filter: brightness(80%);
+  }
+
+
   /* carrusel */
   .wrapper{
  display: none;
@@ -1264,7 +1339,7 @@ span {
   }
    /*home  */
   .highlights{
-    margin: auto;
+    margin: 0;
   }
   .highlights h3{
     font-size: 3.2vw;
@@ -1273,6 +1348,15 @@ span {
   .highlights .tagline{
     text-align: center;
     font-size: 3vw;
+  }
+
+  .home .wrapper2 i#prev2 {
+    bottom: 10px;
+    left: 38%;
+  }
+  .home .wrapper2 #next2 {
+    bottom: 10px;
+    right:38%;
   }
   /* carrusel */
   .wrapper{
