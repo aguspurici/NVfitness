@@ -581,11 +581,12 @@ span {
   align-items: center;
   background-size: cover;
   height: auto;
+  padding-bottom: 80px;
 }
 .contacto .full {
+  margin-top: 0;
   display: flex;
   gap: 100px;
-  margin-top: 10px;
 }
 
 .contacto .container {
@@ -842,21 +843,40 @@ span {
 
   .about .content {
     flex-wrap: wrap;
+    margin-top: -50px;
+    flex-direction: column;
+    width: 100%;
   }
   .about .content .cols {
-    max-width: 600px;
-    min-width: 500px;
+    height: auto;
+    min-width: 200px;
+    max-width: 1000px;
+  }
+
+  .about .content .cols p {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
   }
   .about .content .cols1 {
-    max-height: 800px;
-    max-width: 800px;
+    width: auto;
+    min-width: 600px;
+    max-width: 700px;
+    margin: auto;
     padding-left: 0;
+    max-height: 700px;
   }
   .contacto .full {
+    margin-top: 0;
+    margin-bottom: 0;
     flex-wrap: wrap;
   }
   .contacto .container {
     margin: auto;
+    max-width: 840px;
   }
   .contacto .box {
     flex-direction: row;
@@ -1381,9 +1401,10 @@ span {
     font-size: 3vw;
   }
   .about .content .cols1 {
+    width: 100%;
     margin-top: 30px;
     padding: 0;
-    height: 350px;
+    height: 320px;
   }
 
   /* contacto */
